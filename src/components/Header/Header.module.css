@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.title{
+  font-size: 22px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
+cursor: pointer;
+}
+
+.link:hover {
+  color: orange;
+}

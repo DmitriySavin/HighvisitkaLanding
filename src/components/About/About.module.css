@@ -1,0 +1,19 @@
+.sectionAbout {
+    margin-top: 90px;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    border-radius: 12px;
+}

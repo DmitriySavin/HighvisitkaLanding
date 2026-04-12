@@ -9,16 +9,16 @@ const Header = () => {
       </Link>
       <nav className={styles.navigation}>
         <Link to="menu" smooth={true} duration={500} className={styles.link}>
-          Меню
+          Najlepsze dania
         </Link>
         <Link to="about" smooth={true} duration={500} className={styles.link}>
-          О нас
+          O nas
         </Link>
         <Link to="gallery" smooth={true} duration={500} className={styles.link}>
-          Галерея
+          Galeria
         </Link>
         <Link to="contact" smooth={true} duration={500} className={styles.link}>
-          Контакты
+          Łączność
         </Link>
       </nav>
     </header>

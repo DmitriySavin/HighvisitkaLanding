@@ -36,9 +36,9 @@ const TopDishes = () => {
             className={styles.cardImage}
           />
           <div className={styles.cardContent}>
-            <h3 className={styles.cardTitle}>Кебаб классический</h3>
-            <p>Мясо, овощи, фирменный соус</p>
-            <p className={styles.price}>120 грн</p>
+            <h3 className={styles.cardTitle}>Klasyka Kebaba</h3>
+            <p>Mięso, warzywa, sos firmowy</p>
+            <p className={styles.price}>10 zl</p>
           </div>
         </li>
         <li className={styles.card}>
@@ -48,9 +48,9 @@ const TopDishes = () => {
             className={styles.cardImage}
           />
           <div className={styles.cardContent}>
-            <h3 className={styles.cardTitle}>Кебаб сырный</h3>
-            <p>Мясо, овощи, фирменный соус , сыр</p>
-            <p className={styles.price}>120 грн</p>
+            <h3 className={styles.cardTitle}>Kebab serowy</h3>
+            <p>Mięso, warzywa, sos firmowy</p>
+            <p className={styles.price}>10 zl</p>
           </div>
         </li>
         <li className={styles.card}>
@@ -60,9 +60,9 @@ const TopDishes = () => {
             className={styles.cardImage}
           />
           <div className={styles.cardContent}>
-            <h3 className={styles.cardTitle}>Кебаб дёнер</h3>
-            <p>Мясо, овощи, фирменный соус</p>
-            <p className={styles.price}>120 грн</p>
+            <h3 className={styles.cardTitle}>Kebab z wołowiny</h3>
+            <p>Mięso, warzywa, sos firmowy</p>
+            <p className={styles.price}>10 zl</p>
           </div>
         </li>
         <li className={styles.card}>
@@ -72,9 +72,9 @@ const TopDishes = () => {
             className={styles.cardImage}
           />
           <div className={styles.cardContent}>
-            <h3 className={styles.cardTitle}>Шиш-кебаб</h3>
-            <p>Мясо, овощи, фирменный соус</p>
-            <p className={styles.price}>120 грн</p>
+            <h3 className={styles.cardTitle}>Szaszłyk</h3>
+            <p>Mięso, warzywa, sos firmowy</p>
+            <p className={styles.price}>10 zl</p>
           </div>
         </li>
       </ul>

@@ -29,12 +29,10 @@ const About = () => {
 
         <div>
           <p>
-            Мы — команда, которая любит вкусную еду и делает её каждый день. Наш
-            кебаб готовится по проверенным рецептам и подается максимально
-            быстро.
+           Jesteśmy zespołem, który kocha pyszne jedzenie i przygotowuje je każdego dnia. Nasze kebaby są przygotowywane według sprawdzonych receptur i podawane najszybciej, jak to możliwe.
           </p>
           <br />
-          <p>Нас выбирают за качество, вкус и атмосферу.</p>
+          <p>Zostaliśmy wybrani ze względu na jakość, smak i atmosferę.</p>
         </div>
       </div>
     </section>

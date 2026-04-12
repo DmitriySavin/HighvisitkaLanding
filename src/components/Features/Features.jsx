@@ -27,14 +27,14 @@ const Features = () => {
         visible ? styles.visible : ""
       }`}
     >
-      <h2 className={styles.title}>Почему выбирают нас</h2>
+      <h2 className={styles.title}>Dlaczego warto wybrać nas</h2>
 
       <div className={styles.features}>
         {[
-          "🔥 Всегда свежее мясо",
-          "⚡ Быстрое обслуживание",
-          "🌯 Большие порции",
-          "💰 Доступные цены"
+          "🔥 Zawsze świeże mięso",
+          "⚡ Szybka obsługa",
+          "🌯 Duże porcje",
+          "💰 Przystępne ceny"
         ].map((text, i) => (
           <div
             key={i}

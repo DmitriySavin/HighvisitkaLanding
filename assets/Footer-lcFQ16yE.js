@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BubAQEGu.js";var t={footer:`_footer_6z8or_1`},n=e(),r=()=>(0,n.jsx)(`footer`,{className:t.footer,children:(0,n.jsx)(`p`,{children:`© 2026 Kebab House`})});export{r as default};

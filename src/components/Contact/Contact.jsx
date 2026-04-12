@@ -1,13 +1,32 @@
 import styles from "./Contact.module.css";
-
+import { useRef, useState, useEffect } from 'react';
 const Contact = () => {
+ const ref = useRef();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+
   return (
-    <section id="contact" className={styles.contact}>
+    <section ref={ref} id="contact" className={`${styles.contact} ${visible ? styles.visible : ""}`}>
       <div className={styles.infoWrapper}>
         <h2 className={styles.sectionTitle}>Контакты</h2>
-        <p>📍 Одесса, центр города</p>
-        <p>📞 +380 00 000 00 00</p>
-        <p>⏰ Ежедневно 10:00 – 22:00</p>
+        <p className={styles.info}>📍 Одесса, центр города</p>
+        <p className={styles.info}>📞 +380 00 000 00 00</p>
+        <p className={styles.info}>⏰ Ежедневно 10:00 – 22:00</p>
       </div>
       
         <iframe

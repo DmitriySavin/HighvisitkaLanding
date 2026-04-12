@@ -1,8 +1,24 @@
 import styles from "./About.module.css";
+import { useEffect, useRef, useState } from "react";
 
 const About = () => {
+  const ref = useRef();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+      }
+    }, { threshold: 0.2 }
+    );
+    observer.observe(ref.current);
+
+    return () => observer.disconnect()
+  }, []);
+
   return (
-    <section id="about" className={styles.sectionAbout}>
+    <section ref={ref} id="about" className={`${styles.sectionAbout} ${visible ? styles.visible : ""}`}>
       <h2 className={styles.title}>О нас</h2>
       <div className={styles.about}>
         <img

@@ -2,12 +2,17 @@
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+ 
+  -webkit-backdrop-filter: blur(10px);
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+  padding: 15px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .title{
@@ -20,14 +25,37 @@
 }
 
 .link {
+  position: relative;
   margin-left: 25px;
   text-decoration: none;
   color: #fff;
   font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: orange;
   transition: 0.3s;
-cursor: pointer;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .link:hover {
   color: orange;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 15px 60px;
+  }
 }

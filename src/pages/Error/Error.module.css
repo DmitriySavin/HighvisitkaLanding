@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: orange;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}

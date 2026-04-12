@@ -12,17 +12,20 @@
 
 }
 .menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .card {
   background: #1c1c1c;
-  padding: 20px;
   border-radius: 12px;
   transition: 0.3s ease;
-  display: block;
+  overflow: hidden;
+
+  flex: 1 1 250px;
+  max-width: 300px;
 }
 
 .card:hover {
@@ -42,4 +45,31 @@
 .visible {
   opacity: 1;
   transform: translateX(0);
+}
+
+.cardImage {
+  width: 100%;
+  object-fit: cover;
+
+}
+.cardContent {
+  padding: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    flex: 1 1 calc(25% - 20px);
+  }
 }

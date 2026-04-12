@@ -1,28 +1,18 @@
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Features from "./components/Features/Features";
-import About from "./components/About/About";
-import Gallery from "./components/Gallery/Gallery";
-import TopDishes from "./components/TopDishes/TopDishes";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import Layout from "./components/Layout/Layout";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu/Menu";
+import Error from "./pages/Error/Error";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <div className="container">
-          <Features />
-          <TopDishes />
-          <Gallery />
-          <About />
-          <Contact />
-        </div>
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="*" element={<Error />} />
+      </Route>
+    </Routes>
   );
 };
 

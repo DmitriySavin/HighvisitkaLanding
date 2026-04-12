@@ -17,9 +17,10 @@
 }
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .feature {
@@ -31,6 +32,8 @@
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.5s ease;
+  flex: 1 1 250px;
+    max-width: 300px;
 }
 
 /* поочередное появление */

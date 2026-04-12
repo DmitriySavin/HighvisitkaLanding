@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <section ref={ref} id="about" className={`${styles.sectionAbout} ${visible ? styles.visible : ""}`}>
-      <h2 className={styles.title}>О нас</h2>
+      <h2 className={styles.title}>O nas</h2>
       <div className={styles.about}>
         <img
           src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee"

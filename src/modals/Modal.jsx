@@ -12,9 +12,8 @@ const Modal = ({ closeModal }) => {
       >
         <FaTimes size={20} color="white" />
       </button>
-      {/* <Link to="hero" smooth={true} duration={500} className={styles.link}>
-        <h1 className={styles.title}>Kebab House</h1>
-      </Link> */}
+
+      <h2 className={styles.title}>Menu</h2>
 
       <nav className={styles.navigation}>
         <Link to="menu" smooth={true} duration={500} className={styles.link}>

@@ -6,19 +6,27 @@ const Gallery = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setVisible(true);
-      }
-    }, { threshold: 0.2 }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.2 },
     );
-    observer.observe(ref.current);
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
-    return () => observer.disconnect()
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <section ref={ref} id="gallery" className={`${styles.sectionGallery} ${visible ? styles.visible : ""}`}>
+    <section
+      ref={ref}
+      id="gallery"
+      className={`${styles.sectionGallery} ${visible ? styles.visible : ""}`}
+    >
       <h2 className={styles.title}>Галерея</h2>
       <ul className={styles.gallery}>
         <li className={styles.galleryItem}>

@@ -14,7 +14,9 @@ const Contact = () => {
       { threshold: 0.2 },
     );
 
-    observer.observe(ref.current);
+if (ref.current) {
+      observer.observe(ref.current);
+    }
 
     return () => observer.disconnect();
   }, []);

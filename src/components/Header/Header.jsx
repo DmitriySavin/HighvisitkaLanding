@@ -17,13 +17,13 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Link to="hero" smooth={true} duration={500} className={styles.link}>
-        <h1 className={styles.title}>🔥 Kebab House</h1>
+        <h1 className={styles.title}>🔥 SMAK KRAFT</h1>
       </Link>
       {isOpen && <Modal closeModal={closeModal} />}
 
       <nav className={styles.navigation}>
         <Link to="menu" smooth={true} duration={500} className={styles.link}>
-          Najlepsze dania
+         Menu
         </Link>
         <Link to="about" smooth={true} duration={500} className={styles.link}>
           O nas

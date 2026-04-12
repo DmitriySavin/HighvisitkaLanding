@@ -6,12 +6,17 @@ const Hero = () => {
     <div className={styles.hero} id="hero">
       <h2 className={styles.title}>Soczysty kebab każdego dnia</h2>
       <p className={styles.description}>
-        Świeże składniki, szybka obsługa i smak, który sprawia, że ​​chcesz tu
-        wrócić
+        Najlepszy kebab w Twoim mieście 🌯🔥 Świeże składniki • duże porcje •
+        szybka obsługa Zamów online w kilka sekund ↓
       </p>
-      <Link to="/" className={styles.btn}>
-        Zamów już
-      </Link>
+      <a
+        className={styles.btn}
+        href="https://m.me/dimafrontendweb"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Zamów teraz
+      </a>
     </div>
   );
 };

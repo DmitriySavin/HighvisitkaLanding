@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
 import { useEffect, useRef, useState } from "react";
+import aboutBg from "../../assets/aboutBg.jpg"
 
 const About = () => {
   const ref = useRef();
@@ -24,7 +25,7 @@ const About = () => {
       <h2 className={styles.title}>O nas</h2>
       <div className={styles.about}>
         <img
-          src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee"
+          src={aboutBg}
           className={styles.image}
           alt="О нас"
         />

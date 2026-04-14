@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Link to="hero" smooth={true} duration={500} className={styles.link}>
-        <h1 className={styles.title}>🔥 SMAK KRAFT</h1>
+        <h1 className={styles.title}>🔥 Bafra Kebab Chrząstowo</h1>
       </Link>
       {isOpen && <Modal closeModal={closeModal} />}
 

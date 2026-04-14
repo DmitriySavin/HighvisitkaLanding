@@ -10,6 +10,16 @@
   transition: all 0.6s ease;
 }
 
+.btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: orange;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
 .visible {
   opacity: 1;
   transform: translateY(0);

@@ -33,10 +33,10 @@ const Features = () => {
 
       <div className={styles.features}>
         {[
-          "🔥 Zawsze świeże mięso",
-          "⚡ Szybka obsługa",
-          "🌯 Duże porcje",
-          "💰 Przystępne ceny"
+          "✔ Świeże składniki",
+          "✔ Szybka obsługa",
+          "✔ Duże porcje",
+          "✔ Dobre ceny"
         ].map((text, i) => (
           <div
             key={i}

@@ -1,9 +1,9 @@
 .sectionGallery {
-  margin-top: 90px;
+  /* margin-top: 60px; */
   width: 100%;
   opacity: 0;
   transform: translateY(40px);
-transition: all 0.6s ease;
+transition: opacity 0.6s ease , transform 0.6 ease;
 }
 
 .visible {

@@ -6,6 +6,7 @@ const About = lazy(() => import("../components/About/About"))
 const Gallery = lazy(() => import("../components/Gallery/Gallery"))
 const TopDishes = lazy(() => import("../components/TopDishes/TopDishes"))
 const Contact = lazy(() => import("../components/Contact/Contact"))
+// const Basket = lazy(() => import("../components/Basket/Basket"))
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Gallery />
         <About />
         <Contact />
+        
       </div>
     </Suspense>
   );

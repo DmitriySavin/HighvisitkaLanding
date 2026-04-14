@@ -29,7 +29,7 @@ figcaption,
 blockquote,
 dl,
 dd {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
 
@@ -40,7 +40,10 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background: #0f0f0f;
-    color: #fff;
+  color: #fff;
+
+  margin: 0;
+  overflow-x: hidden;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -61,7 +64,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article>*+* {
+article > * + * {
   margin-top: 1em;
 }
 
@@ -75,22 +78,20 @@ select {
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 
-
 .container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 
-  @media screen and (min-width:480px) {
-    width: 100%;
-
-  }
-
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 480px) {
     width: 100%;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }

@@ -18,9 +18,7 @@ const Hero = () => {
       </a>
       <a
         className={styles.btn}
-        href="https://m.me/dimafrontendweb"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="tel: +480000"
       >
         Zadzwoń
       </a>
